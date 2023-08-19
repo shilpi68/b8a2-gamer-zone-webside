@@ -50,6 +50,8 @@ nav li a{
 .banner{
    width: 1200px; 
    height: 200px;
+   display: flex;
+   gap: 50px;
 
 }
 .banner-title{
@@ -94,4 +96,84 @@ nav li a{
     background-color:#4EC5F7; 
     border: 0px;
 }
-    
+.banner-img img{
+    width: 700px;
+    height: 450px;
+}
+/* funny section */
+.funny-container{
+    width: 1200px; 
+   height: 200px;
+   margin-top: 500px;
+
+}
+.funny-img{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+
+.online{
+   color: #0B0223; 
+   font-size: 48px;
+   font-weight: 700;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.collection{
+    color:#534C64 ;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Rectangle{
+    width: 300px;
+    height: 250px;
+}
+.Installs{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.funny-btn{
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+
+/* responsive media queries */
+@media screen and (max-width:576px) {
+    nav,nav > ul,.banner,.funny-container{
+        flex-direction: column;
+    }
+   .follow{
+        width: 10px;
+        height: 10px;
+        padding: 5px;
+        margin-bottom: 10px;
+}
+.nav li a{
+    gap: 20px;
+}
+.nav-title{
+    font-size: 20px;
+    font-weight: 500;
+.funny-img
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+}
+.funny-container
+    width: 1200px; 
+   height: 200px;
+   margin-top: 100px;
+}
