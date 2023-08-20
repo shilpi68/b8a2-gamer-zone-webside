@@ -147,12 +147,128 @@ nav li a{
     color: transparent;
     -webkit-background-clip: text;
 }
+/* play instantly */
+.play-instantly-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+
+    margin-top: 700px;
+    margin-left: 100px;
+}
+.instantly-img{
+    width: 350px;
+    height: 450px;
+    margin-left: 300px;
+}
+.instantly-img-66{
+   width: 150px;
+   height: 200px; 
+   border-radius: 8px;
+border: 10px solid #FFF;
+position: relative;
+bottom: 100px;
+margin-top: -100px;
+margin-left: 190px;
+}
+.instantly-title{
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+line-height: 60px;
+}
+ /* instantly-img-section */
+ .instantly-img-card{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    margin-left: 20px;
+ }
+ .instantly-img-card .card{
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    display: flex;
+    border-radius: 8px;
+ }
+ .card-stats{
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 500;
+ }
+ .card img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .instantly-img-card :hover
+ .card-stats{
+    color: #F948B2;
+    border-radius: 50%;
+ }
+
+ /* footer section */
+footer{
+    width: 1400px;
+    height: 600px;
+    background-color:#0B0223 ;
+}
+
+
+ .foooter-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .footer-btn{
+    color: #F948B2;
+ }
+ .foooter-section h3{
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+ }
+ .footer-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    gap: 20px;
+ }
+
+ .footer-description{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+ }
+ .Bangladesh{
+    color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+ }
+
+
+
 
 
 
 /* responsive media queries */
 @media screen and (max-width:576px) {
-    nav,nav > ul,.banner,.funny-container{
+    nav,nav > ul,.banner,.funny-container,.play-instantly-container,.foooter-section{
         flex-direction: column;
     }
    .follow{
@@ -167,13 +283,28 @@ nav li a{
 .nav-title{
     font-size: 20px;
     font-weight: 500;
-.funny-img
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+.funny-img{ 
+     
+    grid-template-columns: 1fr;
 
 }
-.funny-container
+   
+
+}
+.funny-container{
     width: 1200px; 
-   height: 200px;
-   margin-top: 100px;
+    height: 200px;
+    margin-top: 100px;
+
+}
+.instantly-img-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.card-stats{
+    
+    font-size: 10px;
+    font-weight: 300;
+ }
 }
